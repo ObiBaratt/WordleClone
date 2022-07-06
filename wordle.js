@@ -116,6 +116,7 @@ function processInput(e) {
     if (!gameOver && row == height) {
         gameOver = true;
         document.getElementById("answer").innerText = word;
+        reload_button();
 
     }
 }
@@ -169,6 +170,7 @@ function update() {
         if (correct == width) {
             gameOver = true;
             document.getElementById("answer").innerText = "Winner!";
+            reload_button();
         }
     }
 
@@ -197,4 +199,16 @@ function update() {
 
     row += 1;
     column = 0;
+}
+
+
+
+function reload_button() {
+    let btn = document.createElement("button");
+    btn.innerHTML = "Play again?";
+    btn.addEventListener("click", function () {
+        location.reload();
+        return false;
+    });
+    document.getElementById("reload_button").appendChild(btn);
 }
