@@ -55,7 +55,7 @@ function initialize() {
             if (key == "Enter") {
                 keyTile.id = "Enter";
             }
-            else if (key.id == "⌫") {
+            else if (key == "⌫") {
                 keyTile.id = "Backspace";
             }
             else if ("A" <= key && key <= "Z") {
