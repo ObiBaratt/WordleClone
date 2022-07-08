@@ -137,6 +137,8 @@ function update() {
         return;
     }
 
+    document.getElementById("answer").innerText = ""
+
     // Process valid guess
     let correct = 0;
     let letterCount = {}; // SQUID -> {S:1, Q:2, U:3, I:4, D:5}
