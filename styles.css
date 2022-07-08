@@ -53,8 +53,6 @@ hr {
     border-color: white;
 }
 
-
-
 .keyboard-row {
     width: 400px;
 
@@ -96,6 +94,23 @@ hr {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+}
+
+@media (min-width: 320px) {
+    .container {
+        width: 300px;
+    }
+    hr {
+        width: 150px;
+    }
+}
+@media (min-width: 481px) {
+    .container {
+        width: 450px;
+    }
+    hr {
+        width: 300px;
+    }
 }
 @media (min-width: 768px) {
     .container {
